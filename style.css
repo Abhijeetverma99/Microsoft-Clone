@@ -39,7 +39,7 @@ nav {
 }
 
 #left-nav-links {
-    width: 528px;
+    width: 500px;
     font-size: 14px;
     list-style: none;
     display: flex;
@@ -48,7 +48,7 @@ nav {
 }
 
 #right-nav-links {
-    width: 360px;
+    width: 350px;
     font-size: 14px;
     list-style: none;
     display: flex;
@@ -74,12 +74,12 @@ nav {
 
 .main-container {
 
-    height: 500px;
+    height: 490px;
     padding: 0 125px;
     width: 100%;
     background-image: url("./assets/section-1.jfif");
-    background-position: left;
-    background-size: contain;
+    background-position: center;
+    background-size: cover;
     display: flex;
     align-items: center;
 
@@ -149,18 +149,19 @@ nav {
 
 .section-2 {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .section-2-first {
     width: 100%;
-    padding: 0 250px;
-    height: 200px;
+    padding: 0 350px;
+    height: 120px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .section-2-first div {
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -169,12 +170,13 @@ nav {
 
 .section-2-first img {
     background: none;
-    width: 50px;
+    width: 40px;
     padding: 5px;
 }
 
 .section-2-first a {
     color: black;
+    font-size: 13px;
     font-weight: 500;
 }
 
@@ -188,7 +190,7 @@ nav {
 }
 
 .second-section-boxes {
-    width: 330px;
+    width: 250px;
 }
 
 .boxes-image-a,
@@ -231,13 +233,13 @@ nav {
 }
 
 .boxes-text h1 {
-    font-size: 27px;
+    font-size: 25px;
     font-weight: 500;
 }
 
 .boxes-text p {
 
-    font-size: 14px;
+    font-size: 13px;
     padding: 20px 0;
 }
 
@@ -265,7 +267,7 @@ nav {
 
 .section-3 {
     width: 100%;
-    height: 70vh;
+    min-height: 70vh;
     background-image: url("./assets/section-3-image.avif");
     background-position: center;
     background-size: contain;
@@ -305,7 +307,7 @@ nav {
 
 .section-4 {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     padding: 10px 64px;
 }
 
@@ -383,12 +385,11 @@ nav {
     border-radius: 2px;
     cursor: pointer;
     position: sticky;
-    bottom: 10px;
+    top:5px;
+    bottom: 5px;
     font-weight: 500;
     font-size: 15px;
-    margin-left: 82rem;
-    margin-bottom: 20px;
-
+    float: right
 }
 
 .back-btn:hover {
@@ -651,9 +652,16 @@ footer {
         height: auto;
     }
 
+    .first-footer-part {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     .first-footer-part ul {
-        margin-top: 30px;
-        margin-right: 70px;
+        margin: 20px;
     }
 
     .second-footer-part {
